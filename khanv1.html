@@ -67,7 +67,7 @@
 <body>
     <div class="container">
         <h1>Thuê Extension KhanV1</h1>
-        <a class="button" id="rentButton">Thuê</a> <!-- Di chuyển nút thuê lên đây -->
+        <a class="button" id="downloadButton" href="#" download>Thuê</a>
         <p class="description">KhanV1 Là Một Tool Hack Đáp An KhanAcademy Được Code Bởi Hoàng Mạnh Phước Tool này sử dụng được cho cả đt và máy tính
         Hỗ Trợ :Chrome , Edge , Kiwi Browser , Chronium</p>
         
@@ -77,8 +77,18 @@
     </div>
 
     <script>
-        document.getElementById('rentButton').addEventListener('click', function() {
-            window.location.href = 'Phuoc2k9avn.github.io/v1.crx'; // Thay thế 'https://example.com' bằng URL mà bạn muốn chuyển hướng
+        document.getElementById('downloadButton').addEventListener('click', function() {
+            // Tạo một đường link tới file cần tải xuống
+            const fileUrl = 'Phuoc2k9avn.github.io/v1.crx'; // Thay thế link này bằng URL của file bạn muốn tải xuống
+            
+            // Tạo một thẻ 'a' ẩn và thực hiện việc tải xuống file
+            const link = document.createElement('a');
+            link.style.display = 'none';
+            link.href = fileUrl;
+            link.setAttribute('download', 'v1.crx'); // Thay 'ten_file.pdf' bằng tên bạn muốn cho file
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         });
     </script>
 </body>
