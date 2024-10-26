@@ -1,0 +1,12 @@
+{
+    "plan": "Free",
+    "status": "Active",
+    "credit": 100,
+    "quota": 100,
+    "duration": 82800,
+    "lastreset": 1729942117,
+    "ttl": 76968,
+    "subscribed": 0,
+    "current_period_start": 1,
+    "current_period_end": 1
+}
